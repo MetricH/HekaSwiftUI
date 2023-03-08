@@ -36,7 +36,7 @@ With Swift Package Manager, add the following `dependency` to your `Package.swif
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/HekaHealth/HekaSwiftUI.git", .upToNextMajor(from: "0.0.5"))
+    .package(url: "https://github.com/HekaHealth/HekaSwiftUI.git", .upToNextMajor(from: "0.0.1"))
 ]
 ```
 

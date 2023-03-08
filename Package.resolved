@@ -12,11 +12,11 @@
       },
       {
         "package": "HekaCore",
-        "repositoryURL": "https://github.com/HekaHealth/core-ios.git",
+        "repositoryURL": "https://github.com/HekaHealth/HekaCore.git",
         "state": {
           "branch": null,
-          "revision": "27348ab39c4e70fc41928cb42d76cb5e3339c1ca",
-          "version": "0.0.2"
+          "revision": "e844b89153fdcaf49547c24d6fec8dbce59aea91",
+          "version": "0.0.4"
         }
       },
       {

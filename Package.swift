@@ -10,16 +10,16 @@ let package = Package(
     // Products define the executables and libraries a package produces, and make them visible to other packages.
     .library(
       name: "HekaSwiftUI",
-      targets: ["heka"])
+      targets: ["HekaSwiftUI"])
   ],
   dependencies: [
-    .package(url: "https://github.com/HekaHealth/core-ios.git", .upToNextMajor(from: "0.0.2"))
+    .package(url: "https://github.com/HekaHealth/HekaCore.git", .upToNextMajor(from: "0.0.4"))
   ],
   targets: [
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
     // Targets can depend on other targets in this package, and on products in packages this package depends on.
     .target(
-      name: "heka",
+      name: "HekaSwiftUI",
       dependencies: ["HekaCore"],
       path: "Sources",
       resources: [
@@ -27,8 +27,8 @@ let package = Package(
       ]
     ),
     .testTarget(
-      name: "hekaTests",
-      dependencies: ["heka"]),
+      name: "HekaSwiftUITests",
+      dependencies: ["HekaSwiftUI"]),
   ],
   swiftLanguageVersions: [.v5]
 )
