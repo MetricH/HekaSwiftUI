@@ -89,8 +89,9 @@ extension ComponentViewModel {
       case .failure(let error):
         self.errorDescription = error.localizedDescription
       case .success:
-        self.hekaManager.stopSyncing()
-        self.setState(to: .notConnected)
+        self.hekaManager.stopSyncing { _ in
+          self.setState(to: .notConnected)
+        }
       }
     }
   }
